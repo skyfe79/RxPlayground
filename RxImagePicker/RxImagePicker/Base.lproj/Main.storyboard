@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxImagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTX-YT-Psb">
+                                <rect key="frame" x="180" y="28" width="240" height="189"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2ok-cy-8a4"/>
+                                    <constraint firstAttribute="height" constant="189" id="BGU-m1-T69"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgS-jN-4el">
+                                <rect key="frame" x="273" y="285" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa0-m5-vv8">
+                                <rect key="frame" x="277" y="337" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHn-ko-SKn">
+                                <rect key="frame" x="284" y="375" width="34" height="30"/>
+                                <state key="normal" title="Crop"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KgS-jN-4el" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F27-cr-4y6"/>
+                            <constraint firstItem="aTX-YT-Psb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="I8O-yG-M7F"/>
+                            <constraint firstItem="aTX-YT-Psb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bh3-Id-phr"/>
+                            <constraint firstItem="kHn-ko-SKn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="dya-YF-rrJ"/>
+                            <constraint firstItem="oa0-m5-vv8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1" id="jcP-Ku-FwJ"/>
+                            <constraint firstItem="KgS-jN-4el" firstAttribute="top" secondItem="aTX-YT-Psb" secondAttribute="bottom" constant="68" id="nFA-zj-DLm"/>
+                            <constraint firstItem="kHn-ko-SKn" firstAttribute="top" secondItem="oa0-m5-vv8" secondAttribute="bottom" constant="8" id="v78-RE-HrK"/>
+                            <constraint firstItem="oa0-m5-vv8" firstAttribute="top" secondItem="KgS-jN-4el" secondAttribute="bottom" constant="22" id="x6L-F8-xRz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraButton" destination="KgS-jN-4el" id="Ko7-TJ-22O"/>
+                        <outlet property="cropButton" destination="kHn-ko-SKn" id="K2v-to-A6c"/>
+                        <outlet property="galleryButton" destination="oa0-m5-vv8" id="rcP-Mh-Sfe"/>
+                        <outlet property="imageView" destination="aTX-YT-Psb" id="nCB-Le-np9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="350"/>
+        </scene>
+    </scenes>
+</document>
