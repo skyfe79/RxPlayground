@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'RxSwift'
+pod 'RxCocoa'
+pod 'RxBlocking'
+pod 'RxDataSources'
+pod 'Alamofire'
+pod 'RxAlamofire'
