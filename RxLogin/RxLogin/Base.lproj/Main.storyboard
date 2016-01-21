@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RxLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sr0-kx-ZE5">
+                                <rect key="frame" x="20" y="136" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtS-ld-oTf">
+                                <rect key="frame" x="20" y="182" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RxLogin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBq-cU-nsS">
+                                <rect key="frame" x="269" y="52" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgG-Cf-1ka">
+                                <rect key="frame" x="279" y="332" width="43" height="30"/>
+                                <state key="normal" title="Signin"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gtS-ld-oTf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44x-ME-nl4"/>
+                            <constraint firstItem="gtS-ld-oTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5O9-lK-uQO"/>
+                            <constraint firstItem="gtS-ld-oTf" firstAttribute="top" secondItem="sr0-kx-ZE5" secondAttribute="bottom" constant="16" id="93B-QG-UMg"/>
+                            <constraint firstItem="oBq-cU-nsS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="9og-dM-dWg"/>
+                            <constraint firstItem="sr0-kx-ZE5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXW-V3-YLn"/>
+                            <constraint firstAttribute="trailing" secondItem="gtS-ld-oTf" secondAttribute="trailing" constant="20" id="M9G-QY-xDS"/>
+                            <constraint firstAttribute="trailing" secondItem="sr0-kx-ZE5" secondAttribute="trailing" constant="20" id="Svz-3D-H3l"/>
+                            <constraint firstItem="sr0-kx-ZE5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Zfc-t9-qsD"/>
+                            <constraint firstItem="UgG-Cf-1ka" firstAttribute="top" secondItem="gtS-ld-oTf" secondAttribute="bottom" constant="120" id="gqK-0L-tSd"/>
+                            <constraint firstItem="UgG-Cf-1ka" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mbu-4v-Zy0"/>
+                            <constraint firstItem="sr0-kx-ZE5" firstAttribute="top" secondItem="oBq-cU-nsS" secondAttribute="bottom" constant="63" id="xAP-fS-joN"/>
+                            <constraint firstItem="oBq-cU-nsS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yOq-Qw-YaN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="UgG-Cf-1ka" id="cOh-3A-7Zk"/>
+                        <outlet property="passwordTextField" destination="gtS-ld-oTf" id="taC-O9-sXT"/>
+                        <outlet property="usernameTextField" destination="sr0-kx-ZE5" id="zwJ-NK-TCf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="349"/>
+        </scene>
+    </scenes>
+</document>
